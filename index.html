@@ -64,9 +64,6 @@
                     для профессионалов и тех, кто строит сам.
                 </div>
             </div>
-            <picture class="intro-picture">
-                <img src="images/intro-roof.png" alt="Крыша">
-            </picture>
         </div> <!-- intro -->
 
         <div class="info-wrapper">
@@ -81,7 +78,7 @@
                         <div class="learn-col">
                             <div class="learn-item">
                                 <svg class="learn-icon" height="80" width="80">
-                                    <use xlink:href="images/sprite.svg#learn-1"></use>
+                                    <use xlink:href="images/sprite.svg#learn-4"></use>
                                 </svg>
                                 <div class="learn-item-title">
                                     О кровельных инновациях
@@ -122,7 +119,7 @@
                         <div class="learn-col -small">
                             <div class="learn-item">
                                 <svg class="learn-icon -bottom" height="80" width="80">
-                                    <use xlink:href="images/sprite.svg#learn-4"></use>
+                                    <use xlink:href="images/sprite.svg#learn-1"></use>
                                 </svg>
                                 <div class="learn-item-title">
                                     Об энергоэффек-тивности
@@ -165,7 +162,19 @@
                                 и заканчивая современными технологичными небоскребами.
                                 Вы узнаете, какими могут быть кровли сегодня, увидите материалы
                                 и технологии, которые лежат в их основе.</p>
-                            <p>В конце галереи – тест. Пройти сейчас</p>
+
+                            <div class="history-testing js-open-test">
+                                <div class="history-testing-title">
+                                    Проверь свои знания
+                                </div>
+                                <div class="history-testing-description">
+                                    <span class="desctop">Пройти тест по истории кровли</span>
+                                    <span class="mobile">Пройти сейчас</span>
+                                    <svg  width="23" height="14">
+                                        <use xlink:href="images/sprite.svg#micro-arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="history-carousel owl-carousel js-carousel-history">
@@ -396,17 +405,19 @@
                                     <div class="about-col">
                                         <div class="about-item">
                                             <div class="about-item-picture">
-                                                <picture>
-                                                    <img src="images/about-image-3.jpg" alt="">
-                                                </picture>
+                                                <a href="?article=complex-roof" data-target="article-complex-roof.html" class="js-open-article">
+                                                    <picture>
+                                                        <img src="images/about-image-3.jpg" alt="">
+                                                    </picture>
+                                                </a>
                                                 <svg width="85" height="85">
                                                     <use xlink:href="images/sprite.svg#about-mask"></use>
                                                 </svg>
                                             </div>
                                             <div class="about-item-content">
-                                                <div class="about-item-title">
+                                                <a href="?article=complex-roof" data-target="article-complex-roof.html" class="js-open-article about-item-title">
                                                     Что скрывает красота? Показываем изнанку сложных кровель
-                                                </div>
+                                                </a>
                                                 <div class="about-item-info">
                                                     <span>
                                                         Статья
@@ -528,17 +539,19 @@
                                     <div class="about-col">
                                         <div class="about-item">
                                             <div class="about-item-picture">
-                                                <picture>
-                                                    <img src="images/about-image-7.jpg" alt="">
-                                                </picture>
+                                                <a href="?article=montazh-sistem" data-target="article-montazh-sistem.html" class="js-open-article">
+                                                    <picture>
+                                                        <img src="images/about-image-7.jpg" alt="">
+                                                    </picture>
+                                                </a>
                                                 <svg width="85" height="85">
                                                     <use xlink:href="images/sprite.svg#about-mask"></use>
                                                 </svg>
                                             </div>
                                             <div class="about-item-content">
-                                                <div class="about-item-title">
+                                                <a href="?article=montazh-sistem" data-target="article-montazh-sistem.html" class="about-item-title js-open-article">
                                                     На что обращать внимание при монтаже кровельных систем, чтобы крыша точно не протекала и не пропускала тепло
-                                                </div>
+                                                </a>
                                                 <div class="about-item-info">
                                                     <span>
                                                         Статья
@@ -591,17 +604,19 @@
                                     <div class="about-col">
                                         <div class="about-item">
                                             <div class="about-item-picture">
-                                                <picture>
-                                                    <img src="images/about-image-9.jpg" alt="">
-                                                </picture>
+                                                <a href="?article=saving-materials" data-target="article-saving-materials.html" class="js-open-article">
+                                                    <picture>
+                                                        <img src="images/about-image-9.jpg" alt="">
+                                                    </picture>
+                                                </a>
                                                 <svg width="85" height="85">
                                                     <use xlink:href="images/sprite.svg#about-mask"></use>
                                                 </svg>
                                             </div>
                                             <div class="about-item-content">
-                                                <div class="about-item-title">
+                                                <a href="?article=saving-materials" data-target="article-saving-materials.html" class="js-open-article about-item-title">
                                                     Какие кровельные материалы экономят деньги заказчика и время строителя?
-                                                </div>
+                                                </a>
                                                 <div class="about-item-info">
                                                     <span>
                                                         Статья
@@ -786,7 +801,7 @@
                     <div class="game-description">
                         Проверь свой профессионализм в развлекательной игре
                     </div>
-                    <a href="#" class="game-button button">
+                    <a href="#" class="game-button button js-open-game">
                         Играть
                         <svg width="23" height="22">
                             <use xlink:href="images/sprite.svg#game-arrow"></use>
@@ -1866,6 +1881,120 @@
 
     </div>
 
+
+
+    <div class="modal-item modal-game js-modal-game">
+
+        <button type="button" class="modal-close js-modal-close js-history-back">
+            <svg width="25" height="25">
+                <use xlink:href="images/sprite.svg#close-modal"></use>
+            </svg>
+        </button>
+
+        <div id="game-app" class="game-app" v-cloak>
+
+            <div class="game-app-wrapper">
+
+                <div class="game-start" v-if="showStartItem">
+                    <picture>
+                        <img src="images/game-main.png" alt="">
+                    </picture>
+                    <div class="game-start-title">
+                        Уложи кровельный пирог
+                    </div>
+                    <div class="game-start-description">
+                        У вас будет три секунды, чтобы запомнить<br>
+                        из чего состоит правильная кровля.<br>
+                        Сможете ли вы ее собрать?
+                    </div>
+                    <button class="game-button button" @click="showView()">
+                        Начать игру
+                        <svg width="23" height="22">
+                            <use xlink:href="images/sprite.svg#game-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="game-view" v-if="showViewItem">
+                    <picture>
+                        <img src="images/game-picture-start.png" alt="">
+                    </picture>
+                    <div class="game-view-loading">
+                        <div class="game-view-title">
+                            Успейте запомнить!
+                        </div>
+                        <transition appear appear-class="active">
+                            <div class="game-view-progress active" v-if="showViewItem">
+                                <span></span>
+                            </div>
+                        </transition>
+                    </div>
+                </div>
+
+                <div class="game-item"
+                     v-for="(element, k) in items" :key="k"
+                     v-if="showItem(k)">
+                    <div class="game-item-header">
+                        <div class="game-item-title">
+                            Уложи кровельный пирог
+                        </div>
+                        <div class="game-item-description">
+                            Выбирайте элементы в порядке монтажа
+                        </div>
+                        <div class="game-progress">
+                            <span
+                                v-for="(item, key) in items" :key="key"
+                                :class="progressClass(key)"
+                            ></span>
+                        </div>
+                    </div>
+                    <picture class="game-item-picture">
+                        <img :src="setImage(k)" alt="">
+                    </picture>
+                    <div class="game-answers">
+
+                        <div v-for="(answer, answerKey) in element.answers" :key="answerKey"
+                             @click="setAnswerStatus(answerKey, k)"
+                             class="game-answer-item">
+
+                            <svg width="32" height="32"
+                                 v-if="setIcon(answerKey, k, true)">
+                                <use xlink:href="images/sprite.svg#game-success"></use>
+                            </svg>
+
+                            <svg width="32" height="32"
+                                 v-else-if="setIcon(answerKey, k, false)">
+                                <use xlink:href="images/sprite.svg#game-error"></use>
+                            </svg>
+
+                            <img :src="answer.picture" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-result" v-if="showResult">
+                    <div class="game-result-title">
+                        Поздравляем,<br>
+                        вы справились!
+                    </div>
+                    <div class="game-result-description">
+                        Хотите узнать больше про материалы и системные решения для всех видов кровель?
+                    </div>
+                    <div class="game-result-description">
+                        Там есть не только подробные гайды по всей продукции «Технониколь», но и полезные обучающие вебинары, строительные калькуляторы и даже база подрядчиков.
+                    </div>
+
+                    <button class="button js-modal-close">
+                        Перейти  к спецпроекту…?
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div> <!-- modal -->
 
 <div class="modal-substrate js-modal-close">
@@ -1898,6 +2027,7 @@
 <script src="js/player/mediaelement-and-player.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/app.js"></script>
+<script src="js/game.js"></script>
 
 </body>
 </html>

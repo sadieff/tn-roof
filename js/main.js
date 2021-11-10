@@ -18,6 +18,10 @@ $(document).ready(function(){
 		openModal('.js-modal-nav');
 	});
 
+	$(document).on('click', '.js-open-game', function(){
+		openModal('.js-modal-game');
+	});
+
 	$(document).on('click', '.js-project', function(){
 		openModal('.js-modal-projects');
 	});
